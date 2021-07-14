@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f6f6f6;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.2s ease-in-out;
+}
+
+:root{
+    --primary-color:#f6f6f6; 
+    --secondery-color:#555; 
+    --login-form:#e0e0e0; 
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 399px;
+    height: 630px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  13px 13px 26px #bebebe,
+ -13px -13px 26px #ffffff;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.picture-for-login-title{
+    text-align: center;
+    margin-top: 35px;   
+}
+
+img{
+    box-shadow:  13px 13px 26px #bebebe,
+    -13px -13px 26px #ffffff;
+    border-radius: 50px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#text-bottom-logo{
+    text-align: center;
+    color: var(--secondery-color);
+    font-family:Arial, Helvetica, sans-serif; 
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-top: -20px;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+}
+
+.username,.password{
+    text-align: center;
+    margin: 35px;
+}
+
+form input{
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    overflow: hidden;
+    width: 290px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  13px 13px 26px #bebebe,
+   -13px -13px 26px #f6f6f6;
+   font-size: 25px;
+   color: #000;
+   cursor: pointer;
+}
+
+form input:focus{
+    width: 300px;
+    transition: all 0.4s ease-in-out;
+    
+}
+.btn button{
+    border: none;
+    outline: none;
+    overflow: hidden;
+    font-size: 32px;
+    letter-spacing: 4px;
+    word-spacing: 10px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    background: rgb(72, 61, 139);
+    box-shadow:  13px 13px 26px #bebebe,
+   -13px -13px 26px #f6f6f6;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   transition: all 0.2s ease-in-out;
+   margin-top: 270px;
+   width: 299px;
+   height: 50px;
+   color: #fff;
+   cursor: pointer;
+}
+
+.btn button:hover{
+   background: rgb(139, 0, 139); 
+   transition: all 0.2s ease-in-out;
+}
+
+.fa-eye-slash{
+   margin-right: -20px;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+@media screen and (min-width:1200px) {
+    .container{
+        width: 600px;
+    }
+}
