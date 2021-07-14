@@ -20,7 +20,7 @@ body{
 
 .container{
     width: 450px;
-    height: 550px;
+    height: 660px;
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -29,6 +29,7 @@ body{
     -5px -5px 10px #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-between;
+   
   
 }
 
@@ -56,5 +57,49 @@ input{
     height: 40px;
     font-size: 25px;
     border-radius: 50px;
+    box-shadow:  5px 5px 10px #959494,
+    -5px -5px 10px #ffffff;
 }
 
+.button{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+   grid-gap: 2rem;
+   margin: 50px;
+}
+
+
+.num-bottom-calculater{
+   padding: 20px;
+   cursor: pointer;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   font-size: 30px;
+   color: var(--gray-color);
+   text-align: center;
+   box-shadow:  5px 5px 10px #959494,
+   -5px -5px 10px #ffffff;
+   border-radius: 50%;
+   width: 80px;
+}
+
+.num-bottom-calculater:hover{
+    background: rgb(105, 105, 105); 
+    color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+#resulte-box-1{
+    background: darkorchid;
+    color: #fff;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#AC,#MC,#darcad,#slash{
+    color:rgb(255, 140, 0); 
+    overflow: hidden;
+}
+ 
