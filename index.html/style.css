@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    color:blueviolet;
+    font-size: 500px;
+    overflow: hidden;
+}
