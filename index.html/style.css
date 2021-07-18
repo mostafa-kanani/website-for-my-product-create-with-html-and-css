@@ -18,6 +18,7 @@ body{
     --green-color:rgb(138, 43, 226); 
     --box-shadow-value:  5px 5px 10px #aeabab,
     -5px -5px 10px #ffffff;
+    --white-color:#f6f6f6; 
 }
 
 .music-player{
@@ -50,21 +51,20 @@ body{
      cursor: pointer;
 }
 
-#hamberger-munu{
+#ellipsis-bar{
     text-align: left;
     color: var(--green-color);
     box-shadow: var(--box-shadow-value); 
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin-top: 30px;
-    margin-left: 50px;
+    margin-top: -50px;
     padding: 7px;
-   cursor: pointer;
-   margin-left: 20px;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
-.text-title-music-player  h2{
+.text-title-music-player h2{
     text-align: center;
     color: var(--primary-color);
     letter-spacing: 5px;
@@ -73,9 +73,13 @@ body{
     font-weight: 500;
     font-variant: normal;
     text-transform: capitalize;
-    margin-top: 50px;
 }
 
+.picture-music-player{
+    text-align: center;
+    margin-top: 2rem;
+    
+}
 
 
 
