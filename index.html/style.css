@@ -114,6 +114,7 @@ form input:focus{
 .btn button:hover{
    background: rgb(139, 0, 139); 
    transition: all 0.2s ease-in-out;
+   color: #91ee91;
 }
 
 .fa-eye-slash{
