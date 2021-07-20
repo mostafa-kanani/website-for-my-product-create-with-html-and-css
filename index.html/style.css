@@ -15,6 +15,7 @@ body{
     --box-shadow-color: rgb(211, 211, 211); 
     --color:#cacaca; 
     --white-color:#f6f6f6; 
+    --color-gray:rgb(47, 79, 79); 
 }
 
 .header{
@@ -61,5 +62,95 @@ body{
     .fa-cart-plus{
         margin-left: 50px;
     }  
+
+    .item-header {
+        margin-left: 500px;
+        width: 80%;
+    }
+   
+}
+
+.fa-cart-plus:hover{
+    color:rgb(0, 255, 255);  
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-bars:hover{
+    color: rgb(0, 255, 255);
+}
+
+.item-header ul li{
+    display: inline-block;
+    color: var(--color); 
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 22px;
+    cursor: pointer;
+    font-variant: normal;
+    letter-spacing: 2px;
+    margin: 20px;
+    margin-top: -5px;
+}
+
+.item-header ul li:hover{
+    color:var(--color-gray);
+    transition: all 0.4s ease-in-out;
+    color:orange;  
+}
+
+.nav{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 430px;
+    align-items: center;
+    justify-content: center;
+    background: #9370DB;  
+    border-radius: 40px;
+    margin-top: -60px;
+}
+
+img{
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn{
+    margin-top:23rem;
+    text-align: center;
+}
+
+button{
+    outline: none;
+    border: none;
+    width: 100px;
+    background: rgb(72, 209, 204); 
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    font-size: 35px;
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    margin-top: -60px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+button:hover{
+    background: rgb(102, 205, 170);
+    transition: all 0.4s ease-in-out;
+    color: rgb(75, 0, 130); 
 }
 
