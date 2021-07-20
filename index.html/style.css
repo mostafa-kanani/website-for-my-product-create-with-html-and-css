@@ -163,9 +163,9 @@ button:hover{
 
 .card-1{
     width: 400px;
-    height: 450px;
+    height: 500px;
     overflow: hidden;
-    border-radius: 40px;
+    border-radius: 20px;
     box-shadow: -2px -2px 8px #F0F8FF; 
     background:#cacaca; 
     position: absolute;
@@ -175,8 +175,3 @@ button:hover{
     margin-top: 80%;
 }
 
-.picture-card-1{
-    text-align: center;
-    margin-top: -60px;
-    
-}
