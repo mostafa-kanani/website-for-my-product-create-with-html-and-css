@@ -165,7 +165,7 @@ img{
     overflow: hidden;
 }
 
-.picture-card-1,.picture-card-2,.picture-card-5{
+.picture-card-1,.picture-card-2,.picture-card-5,.picture-card-6{
     text-align: center;
     margin-top: 20px;
     object-fit: cover;
@@ -181,7 +181,7 @@ img{
     margin-top: 30px;
 }
 
-.text-card-1,.text-card-2,.text-card-3,.text-card-4,.text-card-5{
+.text-card-1,.text-card-2,.text-card-3,.text-card-4,.text-card-5,.text-card-6{
     text-align: center;
     align-items: center;
     letter-spacing: 2px;
@@ -192,7 +192,7 @@ img{
     color: #595959;
 }
 
-.btn-1 button,.btn-2 button,.btn-3 button,.btn-4 button,.btn-5 button{
+.btn-1 button,.btn-2 button,.btn-3 button,.btn-4 button,.btn-5 button,.btn-6 button{
     text-align: center;
     align-items: center;
     margin-left: 95px;
@@ -260,6 +260,17 @@ img{
 }
 
 
+.btn-6 button:hover{
+    background: orangered;
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn-2{
+    margin-top: 27px;
+}
+
+
 .card-4{
     width: 400px;
     height: 470px;
@@ -273,6 +284,59 @@ img{
 .picture-card-4{
     text-align: center;
     margin: 10px;
+}
+
+.card-5{
+    width: 400px;
+    height: 470px;
+    border-radius: 20px;
+    background: #dedede;
+    box-shadow:  6px 6px 20px #595959,
+   -6px -6px 20px #ffffff;
+    margin-top: 30px;
+}
+
+
+.card-6{
+    width: 400px;
+    height: 470px;
+    border-radius: 20px;
+    background: #dedede;
+    box-shadow:  6px 6px 20px #595959,
+   -6px -6px 20px #ffffff;
+    margin-top: 30px;
+}
+
+
+@media screen and (min-width:1200px) {
+    .card-1{
+        margin-left: -400px;
+    }
+
+    .card-2{
+        margin-top: -500px;
+        margin-left: 100px;
+    }
+
+    .card-3{
+        margin-left: 485px;
+        margin-top: -450px;
+    }
+
+    .card-4{
+        margin-left: -500px;
+        margin-top: 50px;
+    }
+
+    .card-5{
+        margin-top: -495px;
+    }
+
+    .card-6{
+        margin-left: 485px;
+        margin-top: -495px;
+    }
+    
 }
 
 
