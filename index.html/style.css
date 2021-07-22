@@ -339,5 +339,50 @@ img{
     
 }
 
+.footer-shop{
+    width: 390%;
+    height: 260px;
+    background: #262626;
+    margin-top: 40px;
+    margin-left: -140%;
+}
 
+.text-footer,.text-footer-2{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    color: #555;
+}
 
+.text-footer span{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.text-footer span:hover{
+    border-bottom: 2px solid #ffffff;
+    width: 80px;
+    transition: all 0.2s ease-in-out;
+    color: orangered;
+}
+
+.text-footer-2 span{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top: -56px;
+}
+
+.text-footer-2 span:hover{
+    border-bottom: 2px solid #ffffff;
+    width: 80px;
+    transition: all 0.2s ease-in-out;
+    color: orangered;
+}
