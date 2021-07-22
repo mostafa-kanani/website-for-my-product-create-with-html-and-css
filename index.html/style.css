@@ -359,8 +359,8 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: capitalize;
-    cursor: pointer;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .text-footer span:hover{
@@ -385,4 +385,63 @@ img{
     width: 80px;
     transition: all 0.2s ease-in-out;
     color: orangered;
+}
+
+.icon-2{
+    text-align: center;
+    align-items: center;
+    margin-top: -200px;
+    color: #595959;
+    margin-left: 50%;
+    margin-top: -150px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.fa-instagram:nth-child(2){
+    margin: 30px;
+    font-size: 40px;
+}
+
+.fa-instagram:hover{
+    color:#91ee91; 
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-facebook:nth-child(4){
+    margin: 30px;
+    font-size: 40px;
+}
+
+.fa-facebook:hover{
+    color: #8A2BE2;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.fa-youtube:nth-child(6){
+    margin: 30px;
+    font-size: 40px;
+}
+
+.fa-youtube:hover{
+    color:#7B68EE;
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-telegram:nth-child(8){
+    margin: 30px;
+    font-size: 40px;
+}
+
+.fa-telegram:hover{
+    color: #AFEEEE; 
+    transition: all 0.4s ease-in-out;
+}
+
+@media screen and (min-width:500px) {
+    .icon-2{
+        
+    }
+
 }
