@@ -336,6 +336,8 @@ img{
         margin-left: 485px;
         margin-top: -495px;
     }
+
+
     
 }
 
@@ -441,7 +443,6 @@ img{
 
 @media screen and (min-width:500px) {
     .icon-2{
-        
+        margin-left: -80px;
     }
-
 }
