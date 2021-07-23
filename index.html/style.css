@@ -55,6 +55,72 @@ img{
     background-size: cover;
 }
 
+.icon-for-card-profile{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 90px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fa-instagram:nth-child(2){
+    margin: 30px;
+    font-size: 40px;
+    color: rgb(138, 43, 226);
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-instagram:nth-child(2):hover{
+    margin-top: -15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-facebook:nth-child(4){
+    margin: 30px;
+    font-size: 40px;
+    color:rgb(147, 112, 219);
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-facebook:nth-child(4):hover{
+    margin-top: -15px;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.fa-github:nth-child(6){
+    margin: 30px;
+    font-size: 40px;
+    color: rgb(175, 238, 238); 
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-github:nth-child(6):hover{
+    margin-top: -15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-youtube:nth-child(8){
+    margin: 30px;
+    font-size: 40px;
+    color:rgb(255, 69, 0); 
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-youtube:nth-child(8):hover{
+    margin-top: -15px;
+    transition: all 0.4s ease-in-out;
+}
+
+.fa-instagram:nth-child(2):hover{
+    margin-top: -15px;
+    transition: all 0.4s ease-in-out;
+}
 
 
 
