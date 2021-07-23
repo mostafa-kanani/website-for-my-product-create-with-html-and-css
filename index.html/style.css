@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    padding:0; 
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    background: mediumturquoise;
+    overflow: hidden;
+}
+
+body::before{
+    content: "";
+    position: absolute; 
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, orange 60%, cyan);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 50%;
+    clip-path: circle(100% at 20% 30%); 
+}
+
+.glass-card{
+    width: 450px;
+    height: 550px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 30px );
+    border: 1px solid rgba( 255, 255, 255, 0.18); 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.picture-card-profile{
+    text-align: center;
+    align-items: center;
+    margin-top: 35px;
+    object-fit: cover;
+}
+
+img{
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #555, 
+    -5px -5px 10px rgba( 31, 38, 135, 0.37 ); 
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
