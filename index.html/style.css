@@ -122,6 +122,29 @@ img{
     transition: all 0.4s ease-in-out;
 }
 
+#btn button{
+   margin-left: 25px;
+   margin-top:200px; 
+   outline: none;
+   border: none;
+   width: 180px;
+   height: 30px;
+   cursor: pointer;
+   border-radius: 40px;
+   background:blueviolet;
+   color: #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   font-size: 25px;
+   letter-spacing: 4px;
+   text-transform: capitalize;
+   transition: all 0.4s ease-in-out;
+}
+
+#btn button:hover{
+    color:darkturquoise;
+    transition: all 0.4s ease-in-out;
+}
 
 
 
