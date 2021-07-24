@@ -5,60 +5,125 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    overflow: hidden;
     display: flex;
-    background-color: #262626;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    overflow: hidden;
+    background: #555;  
+
 }
 
-:root{
-    --border-color:rgb(153, 50, 204); 
-}
-
-.btn{
-    display: grid;
+.container{
+    width: 400px;
+    height: 400px;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    background: #262626;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    align-items: center;
-    margin-left: -30px;
+    z-index: 0;
+    border-radius: 40px;
+    border-top: 10px solid #7B68EE;
+    border-right: 10px solid #00FA9A;
+    border-left: 10px solid #4682B4; 
+    border-bottom: 10px solid blueviolet;
+
 }
 
-.btn button{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    margin: 30px;
-    width: 100%;
-    height: 120px;
-    outline: none;
-    background:none; 
+.text-shadow-animation{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
     letter-spacing: 5px;
-    font-size: 29px;
-    color: #555;
-    border: 10px solid rgb(0, 255, 255); 
-    cursor: pointer;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: normal;
+    background: none;
 }
 
-.btn button:hover{
-    background: rgb(0, 255, 255); 
-    overflow: hidden;
+h1{
+    margin: 30px;
+    font-family: sans-serif;
     transition: all 0.4s ease-in-out;
-    box-shadow: 0 0 5px rgb(0, 255, 255), 
-    0 0 20px rgb(0, 255, 255), 
-    0 0 50px rgb(0, 255, 255), 
-    0 0 200px rgb(0, 255, 255);  
-
+    cursor: pointer;
+    background: none;
+    border-radius: 50px;
+    width: 300px;
 }
 
-.btn button{
-    animation: animate 4s ease-in-out infinite;
+h1:hover{
+    transition: all 0.4s ease-in-out;
+    background: #FF8C00; 
+    box-shadow: 0 0 5px #FF8C00, 
+    0 0 5px #FF8C00, 
+    0 0 25px #FF8C00, 
+    0 0 50px #FF8C00, 
+    0 0 200px #FF8C00; 
 }
 
-@keyframes animate {
-    50%{
+h2{
+    margin: 30px;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    background: none;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+h2:hover{
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 5px, 
+    0 0 25px #00FA9A, 
+    0 0 50px #00FA9A, 
+    0 0 200px #00FA9A; 
+    background: #00FA9A;
+    border: none;
+    outline: none;
+}
+
+h3{
+    margin: 30px;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 35px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+h3:hover{
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 5px, 
+    0 0 25px #7B68EE, 
+    0 0 50px #7B68EE, 
+    0 0 200px #7B68EE; 
+    background: #7B68EE;
+    border: none;
+    outline: none;
+    background: #7B68EE;
+}
+
+.text-shadow-animation h1,h2,h3,.container{
+    animation: text 1s ease-in-out infinite;
+}
+
+@keyframes text{
+    0%{
         opacity: 1;
+    }
+
+    50%{
         filter: hue-rotate(200deg);
+        opacity: 2;
     }
 }
