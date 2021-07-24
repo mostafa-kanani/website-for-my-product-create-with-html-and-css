@@ -4,115 +4,129 @@
     padding: 0;
 }
 
-:root{
-    --primary-color:#f6f6f6; 
-    --gray-color: #555; 
-    --green-light:#91ee91; 
-    --bg-color: rgba( 255, 255, 255, 0.55 );
-    --box-shadow-glass: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-}
-
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: 500;
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
     overflow: hidden;
-    background:cornflowerblue;
-    z-index: 10;
-}
+    background: #555;  
 
-body::before{
-    content: "";
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(red,orange,yellow); 
-    clip-path: circle(40% at 30% 60%);
-}
-
-
-body::after{
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    background: linear-gradient(red,#91ee91,aqua);
-    margin-top: 350px;
-    clip-path: circle(35% at 70% 50%);
-    filter: blur(50px);
 }
 
 .container{
-    width: 480px;
-    height: 570px;
-    background: var(--bg-color);
-    box-shadow: var(--box-shadow-glass); 
-    backdrop-filter: blur( 30px );
-    border-radius: 5px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 400px;
+    height: 400px;
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    background: #262626;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 10;
-    overflow: hidden;
+    z-index: 0;
+    border-radius: 40px;
+    border-top: 10px solid #7B68EE;
+    border-right: 10px solid #00FA9A;
+    border-left: 10px solid #4682B4; 
+    border-bottom: 10px solid blueviolet;
+
 }
 
-.resulte-calculator{
-    text-align: right;
-    font-size: 80px;
-    margin: 10px;
-    color: #555;
-    padding: 10px;
-    font-family: cursive;
-}
-
-.button{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    overflow: hidden;
-    color: #262626;
-    margin: 30px;
+.text-shadow-animation{
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-top: -50px;
-    cursor: pointer;
-}
-
-.button-for-calculator{
-    margin: 40px;
-    font-size: 30px; 
-    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    letter-spacing: 5px;
     text-transform: capitalize;
-    box-shadow: var(--box-shadow-glass);
-    background: var(--bg-color);
-    width: 45px; 
-    overflow: hidden;
-    height: 40px;
-    border-radius: 50%;
-    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-variant: normal;
+    background: none;
 }
 
-.button-for-calculator:hover{
-    color:blueviolet;  
+h1{
+    margin: 30px;
+    font-family: sans-serif;
     transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    background: none;
+    border-radius: 50px;
+    width: 300px;
 }
 
-#MC,#AC,#darcard,#postive{
-    color: orangered;
+h1:hover{
+    transition: all 0.4s ease-in-out;
+    background: #FF8C00; 
+    box-shadow: 0 0 5px #FF8C00, 
+    0 0 5px #FF8C00, 
+    0 0 25px #FF8C00, 
+    0 0 50px #FF8C00, 
+    0 0 200px #FF8C00; 
 }
 
-@media screen and (min-width:1200px) {
- .num{
-     margin-left: 535px;
- }   
-
+h2{
+    margin: 30px;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    background: none;
+    font-size: 30px;
+    border-radius: 50px;
 }
 
+h2:hover{
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 5px, 
+    0 0 25px #00FA9A, 
+    0 0 50px #00FA9A, 
+    0 0 200px #00FA9A; 
+    background: #00FA9A;
+    border: none;
+    outline: none;
+}
 
+h3{
+    margin: 30px;
+    font-family: sans-serif;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 35px;
+    padding: 10px;
+    font-size: 1.5rem;
+}
 
+h3:hover{
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 0 5px, 
+    0 0 25px #7B68EE, 
+    0 0 50px #7B68EE, 
+    0 0 200px #7B68EE; 
+    background: #7B68EE;
+    border: none;
+    outline: none;
+    background: #7B68EE;
+}
 
+.text-shadow-animation h1,h2,h3,.container{
+    animation: text 1s ease-in-out infinite;
+}
+
+@keyframes text{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        filter: hue-rotate(200deg);
+        opacity: 2;
+    }
+}
 
 
 
