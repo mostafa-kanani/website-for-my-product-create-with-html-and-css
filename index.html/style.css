@@ -42,12 +42,6 @@ body::after{
     filter: blur(50px);
 }
 
-@media screen and (min-width:1200px) {
-    .container{
-        display: none;
-    }
-}
-
 .container{
     width: 480px;
     height: 570px;
@@ -89,7 +83,7 @@ body::after{
 .button-for-calculator{
     margin: 40px;
     font-size: 30px; 
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
     box-shadow: var(--box-shadow-glass);
     background: var(--bg-color);
@@ -97,13 +91,25 @@ body::after{
     overflow: hidden;
     height: 40px;
     border-radius: 50%;
-    padding: 0px;
+    padding: 2px;
 }
 
 .button-for-calculator:hover{
     color:blueviolet;  
     transition: all 0.4s ease-in-out;
 }
+
+#MC,#AC,#darcard,#postive{
+    color: orangered;
+}
+
+@media screen and (min-width:1200px) {
+ .num{
+     margin-left: 535px;
+ }   
+
+}
+
 
 
 
