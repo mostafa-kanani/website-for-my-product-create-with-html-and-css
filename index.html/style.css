@@ -80,6 +80,7 @@ h1::selection{
     #for-desktop{
         display: none;
     }
+    
 }
 
 @media screen and (min-width:1200px) {
@@ -95,7 +96,6 @@ h1::selection{
         display: none;
     }
 }
-
 @media screen and (min-width:600px) {
     .icon{
         margin-left: 120px;
@@ -104,9 +104,8 @@ h1::selection{
         margin-left: 214px;
     }
     .icon-2{
-       margin-left: -579px;
+       margin-left: -400px;
     }
-
 }
 
 @media screen and (min-width:763px) {
@@ -121,6 +120,7 @@ h1::selection{
     .icon-2{
         margin-left: -625px;
     }
+
 }
 #for-desktop ul li{
     color: var(--primary-color);
@@ -146,3 +146,37 @@ ul li:hover{
     margin-left: 60%;
 }
 
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@media screen and (max-width:600px) {
+    .logo{
+        display: none;
+    }
+
+    #for-desktop{
+        display: none;
+    }   
+}
+
+.icon-for-desktop{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-left: -640px;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.icon-for-desktop:hover{
+    color: darkturquoise;
+    transition: all 0.4s ease-in-out;
+}
