@@ -6,39 +6,63 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background: #f6f6f6;
+    display: flex;
     font-weight: 500;
-    background: var(--primary-color);
-    
-}
-:root{
-    --primary-color:#f6f6f6;
-    --gray-color:#555;  
-    --block-color: #262626;
-    --white-color:#fff;  
 }
 
-.container{
-    background:blueviolet;
+:root{
+    --primary-color:#f6f6f6; 
+}
+
+.navbar{
     width: 100%;
-    height: 80px; 
-    overflow: hidden;
+    height: 60px;
+    background:lightslategrey;
+    display: flex;
+    position: fixed;
+}
+
+.text-header{
+    color: var(--primary-color); 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    text-transform: capitalize;
 }
 
 h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    color: var(--white-color);
-    letter-spacing: 4px;
-    word-spacing: 5px;
     text-align: center;
     align-items: center;
-    margin-top: 20px;
-    text-transform:capitalize;
+    margin-left: 159px;
+    margin-top: 15px;
+}
+
+h1::selection{
+    color:#000;
 }
 
 .icon{
-    color: #fff;
+    color: var(--primary-color);
+    justify-content: space-between;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 25px;
     cursor: pointer;
 }
+
+.fa-bars{
+    margin-left: 80px;
+    margin-top: 21px;
+}
+
+.icon-2{
+    margin-left: -400px;
+    margin-top: 21px;
+    color: var(--primary-color);
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+
