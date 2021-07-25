@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #262626;
+}
+
+.loading{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 10px solid blueviolet;
+    border-top: 10px solid orangered;
+    box-shadow: 0 0 5px rgb(30, 144, 255), 
+    0 0 25px rgb(0, 255, 255), 
+    0 0 50px rgb(0, 255, 255), 
+    0 0 200px rgb(0, 255, 255); 
+    transition: all 0.4s ease-in-out;
+}
+
+.loading{
+    animation: loading 4s ease-in-out infinite; 
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+
+    50%{
+        transform: rotate(1000deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
