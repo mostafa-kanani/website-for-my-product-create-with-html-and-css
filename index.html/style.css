@@ -266,3 +266,88 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
 }
+
+.progress-bar{
+    margin-top: -10px;
+}
+
+.btn button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    border:none; 
+    background:rgba( 255, 255, 255, 0.50 );  
+    box-shadow: 5px 5px 10px rgba( 31, 38, 135, 0.37 );
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: var(--gray-color); 
+    border-radius: 40px;
+    width: 300px;
+    height: 50px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.btn button:hover{
+    background: var(--gray-color);
+    color: #f6f6f6;
+    transition: all 0.4s ease-in-out;
+}
+
+.active-play-game-dashboarde-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 130px;
+    margin-left: 40px;
+    object-fit: cover;
+}
+
+.progress-bar-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 220px;
+    margin-left: 30px;
+}
+
+.btn-2 button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    border:none; 
+    background:rgba( 255, 255, 255, 0.50 );  
+    box-shadow: 5px 5px 10px rgba( 31, 38, 135, 0.37 );
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: var(--gray-color); 
+    border-radius: 40px;
+    width: 300px;
+    height: 50px;
+    margin-top: 290px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-left: 50px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.btn-2 button:hover{
+    background: var(--gray-color);
+    color: #f6f6f6;
+    transition: all 0.4s ease-in-out;
+}
