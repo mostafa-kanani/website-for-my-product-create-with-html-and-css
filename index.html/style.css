@@ -13,7 +13,7 @@ body{
 :root{
     --gray-color:#555; 
     --bg-color:#f6f6f6; 
-    -color:#e0e0e0; 
+    --color:#e0e0e0; 
 }
 
 body::before{
@@ -28,6 +28,8 @@ body::before{
     border-radius: 50%;
     margin-left: -320px;
     margin-top: -180px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -60,5 +62,101 @@ body::after{
     border-right: 2px solid rgba( 255, 255, 255, 0.50 ); 
 }
 
+.picture-for-dashboard{
+    object-fit: cover;
+    margin: 15px;
+    box-shadow: 5px 5px 10px rgba( 255, 255, 255, 0.50 );  
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: grid;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.picture-dashboard{
+   object-fit: cover;
+   box-shadow: 3px 3px 5px #555;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   padding: 5px;
+   margin-top: 20px;
+   margin-left: 15px;
+   cursor: pointer;
+}
+
+.text-for-picture,.text-for-picture-3,.text-for-picture-4,.text-for-picture-5{
+    margin-left: 18px;
+    margin-top: 10px;
+    color: var(--gray-color);
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize; 
+}
+
+.text-for-picture-2{
+    margin-left: -3px;
+    margin-top: 10px;
+    color: var(--gray-color);
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: capitalize; 
+}
+
+.picture-for-dashbaord-2{
+    object-fit: cover;
+    box-shadow: 3px 3px 5px #555;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.picture-for-dashboard-3{
+    object-fit: cover;
+    box-shadow: 3px 3px 5px #555;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 50px;
+    margin-left: 16px;
+    cursor: pointer;
+}
 
 
+.picture-for-dashborad-4{
+    object-fit: cover;
+    box-shadow: 3px 3px 5px #555;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.picture-for-dashboard-5{
+    object-fit: cover;
+    box-shadow: 3px 3px 5px #555;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.bg-color{
+   
+}
