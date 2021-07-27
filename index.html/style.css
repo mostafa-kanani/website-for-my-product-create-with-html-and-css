@@ -45,7 +45,7 @@ body::after{
     border-radius: 50%;
     overflow: hidden;
     margin-top: 450px;
-    margin-left: 210px;
+    margin-left: 50%;
 }
 
 .music-player{
@@ -181,6 +181,7 @@ progress{
     font-weight: 500;
     margin-top: 40px;
     cursor: pointer;
+    margin-left: 20px;
 }
 .fa-backward:hover{
     color: rgba(72,0,255,1);
@@ -193,7 +194,7 @@ progress{
     margin: 10px;
     font-size: 30px;
     font-weight: 500;
-    margin-left: 200px;
+    margin-left: 203px;
     margin-top: -40px;
 }
 
@@ -203,10 +204,20 @@ progress{
     cursor: pointer;
 }
 
-.fa-forward{
-    
+.forward{
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 390px;
+    margin-top: -42px; 
 }
 
-
+.fa-forward:hover{
+    color: rgba(72,0,255,1);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
 
 
