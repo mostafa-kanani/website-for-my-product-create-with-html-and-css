@@ -6,12 +6,28 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: #e0e0e0;
+  background:#E0E0E0; 
   font-weight: 500;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+:root{
+    --gray-color:#555; 
+}
+
+.text{
+    text-align: center;
+    align-items: center;
+    margin: 30px;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: var(--gray-color);
+    text-transform: capitalize;
 }
 
 .icon {
@@ -21,11 +37,12 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: row;
-  border-bottom: 3px solid #555;
-  border-right: 3px solid rgb(123, 104, 238);
-  border-top: 3px solid rgb(153, 50, 204);
-  border-left: 3px solid rgb(64, 224, 208);
+  border-bottom: 10px solid #555;
+  border-right: 10px solid rgb(123, 104, 238);
+  border-top: 10px solid rgb(153, 50, 204);
+  border-left: 10px solid rgb(255, 69, 0); 
   border-radius: 40px;
+  animation: icon 4s ease-in-out infinite;
 }
 
 .fa-instagram,
@@ -74,4 +91,14 @@ body {
   .icon {
     flex-direction: column;
   }
+}
+
+@keyframes icon {
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        filter: hue-rotate(250deg);
+    }
 }
