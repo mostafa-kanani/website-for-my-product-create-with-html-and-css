@@ -35,7 +35,8 @@ img{
   transform: translate(80px,-80px);
   opacity: .8;
 }
-.container:hover img:nth-child(4){
+.container:hover img:nth-child(1){
   transform: translate(40px,-40px);
   opacity: .4;
 }
+
