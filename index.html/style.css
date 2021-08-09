@@ -2,183 +2,48 @@
   box-sizing: border-box;
 }
 body{
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  display: flex;
-  background:#262626;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  background: #e0e0e0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-}
-.container{
-  width: 1300px;
-  height: 900px;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  background: cornflowerblue;
-}
-.nav-link{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  overflow: hidden;
-  margin: 10px;
-  margin-top: 40px;
-  float: right;
+  display: flex;
+  background: #050801;
+  flex-direction: column;
 }
 a{
-  color: #ffff;
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 40px 0;
+  color: #03e9f4;
   text-decoration: none;
-  text-transform: capitalize;
-  cursor: pointer;
-  padding: 10px;
-  font-size: 35px;
-  margin: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-size: 25px;
+  text-transform: uppercase;
+  overflow: hidden;
   transition: all 0.4s ease;
-  border-radius: 10px;
+  letter-spacing: 2px;
+  border: 4px solid #03e9f4;
+  animation: animate 2s ease-in-out  infinite;
+  filter: hue-rotate(200deg);
 }
 a:hover{
-  background: mediumslateblue;
-  height: 50px;
-  transition: all 0.4s ease;
-  color: #fff;
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 #03e9f4, 
+  0 0 25px #03e9f4, 
+  0 0 50px #03e9f4, 
+  0 0 200px #03e9f4; 
 }
-.logo{
-  margin: 20px;
-  float: left;
-}
-h1{
-  color: #e0e0e0;
-  letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 25px;
-  border-bottom: 4px solid #262626;
-}
-/*navbar*/
-.content{
-  text-align: center;
-  margin-top: 200px;
-  float: left;
-  font-family: sans-serif;
-  font-weight: 600;
-  letter-spacing: 2px;
-  margin-left: -150px;
-}
-h2{
-  font-size: 70px;
-  color:mediumspringgreen;
-  text-transform: capitalize;
-}
-p{
-  letter-spacing: 1px;
-  font-size: 50px;
-  color:darkslategrey;
-  text-transform: capitalize;
-}
-.btn button{
-  outline: none;
-  border-radius: 20px;
-  border:none; 
-  background:darkslategray;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  letter-spacing: 1px;
-  cursor: pointer;
-  color: #fff;
-  width: 200px; 
-  height: 50px;
-  font-size: 25px;
-  margin: 10px;
-  padding: 10px;
-  margin-top: 10px;
-  transition: all 0.4s ease;
-}
-button:hover{
-  color: #fff;
-  border: 2px solid mediumturquoise;
-  background: mediumturquoise;
-  transition: all 0.4s ease;
-}
-.icon-for-landing-page{
-  font-size: 40px;
-  cursor: pointer;
-  margin-top: 30px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  margin-top: 400px;
-  color: #fff;
-  transition: all 0.4s ease;
-}
-.fa-instagram:nth-child(2){
-  margin: 10px;
-  transition: all 0.4s ease;
-}
-
-.fa-facebook:nth-child(4){
-  margin: 10px;
-  transition: all 0.4s ease;
-}
-
-.fa-github:nth-child(6){
-  margin: 10px;
-  transition: all 0.4s ease;
-}
-.fa-youtube:nth-child(8){
-  margin: 10px;
-  transition: all 0.4s ease;
-}
-.fa-instagram:nth-child(2):hover{
-  color: lightslategray;
-}
-
-.fa-github:nth-child(6):hover{
-  color: lightslategray;
-}
-
-.fa-facebook:nth-child(4):hover{
-  color: lightslategray;
-}
-
-.fa-youtube:nth-child(8):hover{
-  color: lightslategray;
-}
-.picture{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  margin-left: 319px;
-  object-fit: cover;
-  animation: picture 4s ease infinite;
-  transition: all 0.4s ease;
-}
-img{
-  border-radius: 50%;
-  box-shadow: 5px 5px 10px #262626, 
-  -5px -5px 10px #555; 
-  transition: all 0.4s ease;
-  filter: drop-shadow(5px 5px 10px #555);
-}
-@keyframes picture {
+@keyframes animate {
   0%{
-    opacity: 1;
-  }  
-  50%{
-    margin-top: -20px;
     opacity: 2;
-    filter: hue-rotate(360deg);
+  }
+  50%{
+    filter: hue-rotate(300deg);
   }
 }
-
 
 
