@@ -63,3 +63,47 @@ h1{
   border-bottom: 4px solid #262626;
 }
 /*navbar*/
+.content{
+  text-align: center;
+  margin-top: 200px;
+  float: left;
+  font-family: sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: -150px;
+}
+h2{
+  font-size: 70px;
+  color:mediumspringgreen;
+  text-transform: capitalize;
+}
+p{
+  letter-spacing: 1px;
+  font-size: 50px;
+  color:darkslategrey;
+  text-transform: capitalize;
+}
+.btn button{
+  outline: none;
+  border-radius: 20px;
+  border:none; 
+  background:darkslategray;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: #fff;
+  width: 200px; 
+  height: 50px;
+  font-size: 25px;
+  margin: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  transition: all 0.4s ease;
+}
+button:hover{
+  color: #fff;
+  border: 2px solid mediumturquoise;
+  background: mediumturquoise;
+  transition: all 0.4s ease;
+}
