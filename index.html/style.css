@@ -107,3 +107,78 @@ button:hover{
   background: mediumturquoise;
   transition: all 0.4s ease;
 }
+.icon-for-landing-page{
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 400px;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.fa-instagram:nth-child(2){
+  margin: 10px;
+  transition: all 0.4s ease;
+}
+
+.fa-facebook:nth-child(4){
+  margin: 10px;
+  transition: all 0.4s ease;
+}
+
+.fa-github:nth-child(6){
+  margin: 10px;
+  transition: all 0.4s ease;
+}
+.fa-youtube:nth-child(8){
+  margin: 10px;
+  transition: all 0.4s ease;
+}
+.fa-instagram:nth-child(2):hover{
+  color: lightslategray;
+}
+
+.fa-github:nth-child(6):hover{
+  color: lightslategray;
+}
+
+.fa-facebook:nth-child(4):hover{
+  color: lightslategray;
+}
+
+.fa-youtube:nth-child(8):hover{
+  color: lightslategray;
+}
+.picture{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-left: 319px;
+  object-fit: cover;
+  animation: picture 4s ease infinite;
+  transition: all 0.4s ease;
+}
+img{
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px #262626, 
+  -5px -5px 10px #555; 
+  transition: all 0.4s ease;
+  filter: drop-shadow(5px 5px 10px #555);
+}
+@keyframes picture {
+  0%{
+    opacity: 1;
+  }  
+  50%{
+    margin-top: -20px;
+    opacity: 2;
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
