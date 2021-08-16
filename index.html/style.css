@@ -136,6 +136,7 @@ button:hover{
     overflow:hidden; 
     transition: all 0.4s ease;
 }
+
 .fa-instagram:nth-child(2):hover{
     color:mediumturquoise;
     transition: all 0.4s ease;
