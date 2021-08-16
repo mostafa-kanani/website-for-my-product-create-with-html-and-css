@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #07252d;
+}
+h2{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    font-size: 6rem;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#000);
+    line-height: 8rem;
+    outline: none;
+    animation: text 4s infinite both ease-in-out;
+}
+@keyframes text {
+    0%,18%,20%,50.1%,60%,65.1%,65%,1%,80%,90.1%,92%{
+        box-shadow: none;
+        color: #07252d;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: #fff;
+        text-shadow: 0 0 20px #03bcf4, 
+        0 0 40px #03bcf4, 
+        0 0 80px #03bcf4, 
+        0 0 190px #03bcf4; 
+    }
+}
+
+
