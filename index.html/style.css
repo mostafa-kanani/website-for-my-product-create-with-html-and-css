@@ -1,72 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 *{
     box-sizing: border-box;
 }
 body{
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     display: flex;
-    background: #091921;
-    overflow: hidden;
-    color: #fff;
-    align-items: center;
+    background-color: #ecf0f3;
+    display: flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
 }
-body::before{
-    content: "";
-    width: 450px;
-    height: 450px;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,231,216,1) 100%, rgba(72,0,255,1) 100%);
-    border-radius: 50%;
-    margin-left: -550px;
-    margin-top: -500px;
-    z-index: 1;
-    position: absolute;
-}
-body::after{
-    content: "";
-    width: 450px;
-    height: 450px;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,0,90,1) 100%, rgba(72,0,255,1) 100%); 
-    border-radius: 50%;
-    margin-top: 400px;
-    margin-left: 500px;
-}
 .container{
-    width: 690px;
+    width: 630px;
     height: 850px;
-    background: rgba( 255, 255, 255, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 30px );
-   -webkit-backdrop-filter: blur( 13.0px );
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, 
+    -13px -13px 20px #fff; 
+    border: 2px solid #fff;
     border-radius: 10px;
-    border-right: 1px solid rgba( 255, 255, 255, 0.18 ); 
-    border-top: 1px solid rgba( 255, 255, 255, 0.18 ); 
-    z-index: 10;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    margin-top: -20px;
-    overflow: hidden;
+    align-self: center; 
 }
-
-.box{
+.resulte {
     text-align: center;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 input{
     outline: none;
     border: none;
-    width: 689px;
-    height: 200px;
-    text-align: right;
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), 
+    -0.5px -0.5px 0px  rgba(255, 255, 255, 0.1),
+    0.5px 0.5px 0px rgba(255, 255, 255, 0.15), 
+    0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s ease; 
+    font-size: 40px;
+    width: 590px;
+    border-radius: 10px;
+    height: 80px; 
+    text-align: center;
+    align-items: center;
+    color: #555;
+    font-weight: 600;
     text-transform: uppercase;
-    color: #fff;
-    overflow: hidden;
-    background: rgba( 255, 255, 255, 0.25 );
 }
 .button{
     text-align: center;
@@ -79,30 +61,49 @@ input{
     grid-column-gap: 1rem;
     cursor: pointer;
     font-size: 3rem;
-    margin-top: 100px;
-    background: transparent;
+    margin-top: 18px;
+    color: #555;
+}
+#resulte-calc{
+    box-shadow: 13px 13px 20px #cbced1, 
+    -13px -13px 20px #fff; 
+    background:rgb(123, 104, 238);
+    color: #fff;
 }
 span{
-    margin: 35px;
+    margin: 25px;
+    box-shadow: 13px 13px 20px #cbced1, 
+    -13px -13px 20px #fff; 
+    width: 90px;
+    height: 90px;
+    padding: 17px;
     text-align: center;
-    padding: 8px;
-    transition: all 0.4s ease; 
-}
-
-.num{
-   border: 3px solid rgba( 255, 255, 255, 0.25 );
-   border-width: 5px;
-   width: 100px;
-   height: 70px;
-   border-radius: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.2s ease;
 }
 span:hover{
-    background: rgba( 255, 255, 255, 0.25 );
-    transition: all 0.2s ease-in-out;
+    background:rgb(230, 230, 250);
 }
 span:active{
-  background: rgb(0, 250, 154);
-  transition: all 0.1s ease; 
-  color: #fff;
+    background:rgb(0, 255, 127); 
+    color: #fff;
+    transition: all 0.2s ease;
 }
+/*frontend_mostafa*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
