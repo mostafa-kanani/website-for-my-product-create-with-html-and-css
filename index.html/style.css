@@ -128,8 +128,19 @@ img{
     margin-top: 60px;
 }
 /*main*/
-
-
+#preloader{
+    background: #fff no-repeat url(./sa.gif) center center;
+    width: 300%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-size: 18%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+/*loader*/
 
 
 
