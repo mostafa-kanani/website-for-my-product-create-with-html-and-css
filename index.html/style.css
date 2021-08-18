@@ -1,2 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #91ee91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 700px;
+    height: 1000px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    border-radius: 10px;
+}
+.logo{
+    text-align: center;
+    margin: 10px;
+}
+img{
+    object-fit: cover;
+}
+.text-bottom-of-logo{
+   text-align: center;
+   align-items: center;
+   font-size: 32px;
+   color: crimson;
+   font-family: 'Atkinson Hyperlegible', sans-serif;
+   letter-spacing: 1px;
+   font-weight: 600;
+   text-transform: capitalize;
+   margin-top: -10px;
+}
+.list{
+    text-align: center;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+label{
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    color: #555;
+}
+label::selection{
+    color: #fff;
+    background: #e0e0e0;
+}
+input{
+    outline: none;
+    width: 85%;
+    height: 90px;
+    border-width: 1px;
+    border-color: #555;
+    border-radius :5px;
+    border: none;
+    background: #e0e0e0;
+    color: #555;
+    font-size: 20px;
+    margin: 10px;
+}
+option:checked{
+    overflow: scroll;
+}
+input::placeholder{
+    text-align: right;
+    font-size: 30px;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
 
-
+.code{
+    float: right;
+    margin-right: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.field{
+    text-align: center;
+    margin-top: 10px;
+}
+input[type=text]{
+    text-align: center;
+    font-size: 38px;
+    overflow: hidden;
+}
+input[type=text]::placeholder{
+    margin: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+}
