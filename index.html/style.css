@@ -57,7 +57,5 @@ video{
   object-fit: cover;
   z-index: 2;
   pointer-events: none;
-  mix-blend-mode: screen;
+  mix-blend-mode: screen; 
 }
-=======
->>>>>>> master
