@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: #f6f6f6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/1.jpg); 
+    background-position: center center;
+    background-size: 100%;
+    object-fit: cover;
+}
+
+.nav-bar{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-top: -40%;
+    transition: all 0.4s ease;
+}
+ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 30px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    padding:10px;
+    text-align: center;
+}
+ul li:nth-child(1):hover{
+    background: rgb(72, 61, 139);
+    transition: all 0.4s ease;
+}
+ul li:nth-child(2):hover{
+  background: rgb(72, 61, 139); 
+  transition: all 0.4s ease;
+}
+ul li:nth-child(3):hover{
+    background: rgb(72, 61, 139); 
+    transition: all 0.4s ease;
+ }
+ ul li:nth-child(4):hover{
+    background: rgb(72, 61, 139); 
+    transition: all 0.4s ease;
+}
+ul li:nth-child(5):hover{
+    background: rgb(72, 61, 139); 
+    transition: all 0.4s ease;
+}
+/*nav-bar*/
+
+.search-box input{
+    float: right;
+    margin-right: -300px;
+    margin-top: -11%;
+    outline: none;
+    border: none;
+    background:#f6f6f6;
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px; 
+    box-shadow: 0 0  10px royalblue;
+}
+input::placeholder{
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+}
