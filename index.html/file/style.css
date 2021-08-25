@@ -1,81 +1,217 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-    padding: 0;
-    background: #f6f6f6;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./images/1.jpg); 
-    background-position: center center;
-    background-size: 100%;
-    object-fit: cover;
+body {
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/1.jpg);
+  background-position: center center;
+  background-size: 100%;
+  object-fit: cover;
 }
 
-.nav-bar{
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    margin-top: -40%;
-    transition: all 0.4s ease;
+.nav-bar {
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  margin-top: -40%;
+  transition: all 0.4s ease;
+  float: left;
 }
-ul li{
-    display: inline-block;
-    list-style-type: none;
-    margin: 30px;
-    text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 25px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: all 0.4s ease;
-    padding:10px;
-    text-align: center;
+ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 30px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+  padding: 10px;
+  text-align: center;
 }
-ul li:nth-child(1):hover{
-    background: rgb(72, 61, 139);
-    transition: all 0.4s ease;
+.link-nav {
+  margin-left: 200px;
 }
-ul li:nth-child(2):hover{
-  background: rgb(72, 61, 139); 
+ul li:nth-child(1):hover {
+  background: rgb(72, 61, 139);
   transition: all 0.4s ease;
 }
-ul li:nth-child(3):hover{
-    background: rgb(72, 61, 139); 
-    transition: all 0.4s ease;
- }
- ul li:nth-child(4):hover{
-    background: rgb(72, 61, 139); 
-    transition: all 0.4s ease;
+ul li:nth-child(2):hover {
+  background: rgb(72, 61, 139);
+  transition: all 0.4s ease;
 }
-ul li:nth-child(5):hover{
-    background: rgb(72, 61, 139); 
-    transition: all 0.4s ease;
+ul li:nth-child(3):hover {
+  background: rgb(72, 61, 139);
+  transition: all 0.4s ease;
+}
+ul li:nth-child(4):hover {
+  background: rgb(72, 61, 139);
+  transition: all 0.4s ease;
+}
+ul li:nth-child(5):hover {
+  background: rgb(72, 61, 139);
+  transition: all 0.4s ease;
 }
 /*nav-bar*/
 
-.search-box input{
-    float: right;
-    margin-right: -300px;
-    margin-top: -11%;
-    outline: none;
-    border: none;
-    background:#f6f6f6;
-    text-align: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-transform: capitalize;
-    width: 300px;
-    height: 40px;
-    border-radius: 10px; 
-    box-shadow: 0 0  10px royalblue;
+.search-box [type="text"] {
+  float: right;
+  margin-right: -380px;
+  margin-top: -9%;
+  outline: none;
+  border: none;
+  background: #f6f6f6;
+  text-align: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px royalblue;
 }
-input::placeholder{
-    color: #555;
-    font-family: Arial, Helvetica, sans-serif;
+input::placeholder {
+  color: #262626;
+  font-family: Arial, Helvetica, sans-serif;
 }
+.logo {
+  float: left;
+  margin-left: 1%;
+  margin-top: -8%;
+  border-bottom: 2px solid #f6f6f6;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 50px;
+}
+.fa-search {
+  float: right;
+  clear: both;
+  font-size: 20px;
+  margin-right: -120px;
+  margin-top: -82px;
+  color: #555;
+  cursor: pointer;
+}
+.fa-search:hover {
+  color: crimson;
+}
+#login-box {
+  width: 450px;
+  height: 480px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+.text-login-box {
+  text-transform: capitalize;
+  text-align: center;
+  color: rgb(255, 69, 0);
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  background: #f6f6f6;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 75px;
+  font-size: 25px;
+  -webkit-appearance: none;
+  pointer-events: none;
+  user-select: none;
+  margin-top: 40px;
+}
+
+.username {
+  text-align: center;
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+}
+.password {
+  text-align: center;
+  margin-top: 40px;
+}
+input {
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  width: 380px;
+  height: 60px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+}
+input::placeholder {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.btn {
+  text-align: center;
+  margin: 50px;
+}
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 280px;
+  height: 50px;
+  text-transform: capitalize;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  background: rgb(255, 69, 0);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+button:hover {
+  background: dodgerblue;
+  transition: all 0.4s ease;
+}
+.link {
+  margin: 15px;
+}
+span:nth-child(2) {
+  color: orange;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+a:nth-child(1),
+a:nth-child(3) {
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-wrap: normal;
+}
+/*login-form*/
