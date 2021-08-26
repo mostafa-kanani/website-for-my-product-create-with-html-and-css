@@ -1,46 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
 *{
     box-sizing: border-box;
 }
 body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    background-color: #ecf0f3;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #252839;
+    overflow: scroll;
 }
-h1{
-    position: relative;
-    font-size: 14vw;
-    color: #252839;
-    -webkit-text-stroke: 0.3vw #383d52;
-    text-transform: uppercase;
+:root{
+    --shadow-color: 13px 13px 20px #cbced1,
+       -13px -13px 20px #fff;
 }
-h1::before{
-    content:attr(data-text);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #01fe37;
-    -webkit-text-stroke: 0vw #383d52;
-    border-right: 2px solid #01fe37;
+.card-product{
+    width: 410px;
+    height: 500px;
+    background-color: #ecf0f3;
+    box-shadow: 13px 13px 20px #cbced1, 
+    -13px -13px 20px #fff;
+    display: grid; 
     overflow: hidden;
-    animation: animate 6s linear infinite;
 }
-@keyframes animate {
-    0%,10%,100%{
-        width: 0;
-    }
-    70%{
-        width: 100%;
-    }
+.picture-card-product{
+    text-align: center;
+    align-items: center;
+    box-shadow: var(--shadow-color);
+}
+img{
+    object-fit: cover;
+}
+.text-for-product,.text-for-product-2{
+    font-family: 'Almarai', sans-serif;
+    text-align: right;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+    align-items: flex-end;
+    margin-right: 20px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.fa-clock {
+    text-align: right;
+    float: right;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(72, 61, 139);
+    cursor: pointer;
+    -webkit-appearance: none;
+    clear: both;
+}
+span{
+    text-align: right;
+    float: right;
+    margin-top: 1px;
+    margin-left: 0px;
+    font-size: 20px;
+    pointer-events: none;
+    color: rgb(72, 61, 139);
+}
+h3:nth-of-type(1){
+    text-align: right;
+    float: right;
+    margin-right: 40px;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 600;
+    color: rgb(72, 61, 139);
+}
+.fa-arrow-left{
+    float: right;
+    margin-right: 15px;
+    margin-top: 26px;
+    color: rgb(72, 61, 139);
+    font-size: 20px;
+    overflow: hidden;
+    pointer-events: none;
+}
+.price{
+    font-family: 'Almarai', sans-serif;
+    margin-top: -40px;
+    margin-left: 1rem;
+    color: rgb(72, 61, 139);
+    font-weight: 600;
+    font-size: 20px; 
+}
+.toman{
+    float: left;
+    margin-top: -3.8rem;
+    margin-left: 5rem;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 600;
+}
+.btn-1{
+    float: right;
+    text-align: right;
+    margin: 20px;
+    margin-top: -3.5rem;
+    z-index: 11;
+}
+button{
+    font-family: 'Almarai', sans-serif;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    font-size: 22px;
+    background: rgb(72, 61, 139);
+    width: 10rem;
+    height: 3rem;
+    border-radius: 10px; 
+    cursor: pointer;
+    color: #fff;
 }
 /*frontend_mostafa*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
